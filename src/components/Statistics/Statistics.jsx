@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
-import { StatisticsCard, StatListBoard, Title, StatList, Label, Percentage } from "./Statistics.styled"
+import { StatisticsCard, Item, Title, StatList, Label, Percentage } from "./Statistics.styled"
 
 export const Statistics = ({ title, upload }) => {
   const dataItems = upload.map(({ id, label, percentage }) => (
-          <StatList key={id}>
+          <Item key={id}>
             <Label>{label}</Label>
-            <Percentage>{percentage}</Percentage>
-          </StatList>
+            <Percentage>{percentage}%</Percentage>
+          </Item>
         ))
   return (
     <StatisticsCard>
       {title ? <Title>{title}</Title> : ''}
 
-      <StatListBoard>
+      <StatList>
         {dataItems}
-      </StatListBoard>
+      </StatList>
     </StatisticsCard>
   )
 }

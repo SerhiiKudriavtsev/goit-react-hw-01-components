@@ -1,8 +1,10 @@
 import { Box } from "components/Box/Box";
 import { Profile } from "components/Profile/Profile";
 import { Statistics } from "components/Statistics/Statistics";
-import user from 'user.json';
-import data from 'data.json'
+import { FriendList } from "components/FriendList/FriendList";
+import user from "../../Data/user";
+import data from "../../Data/data";
+import friends from "../../Data/friends";
 
 export const App = () => {
   return (
@@ -25,6 +27,8 @@ export const App = () => {
         stats={user.stats} />
       
       <Statistics title="Upload stats" upload={data} />
+
+      <FriendList friends={friends} />;
 
     </Box>
   );

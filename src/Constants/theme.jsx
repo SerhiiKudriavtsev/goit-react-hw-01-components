@@ -1,10 +1,15 @@
 export const theme = Object.freeze({
+  widths: {
+    s: '400px',
+    m: '800px',
+    l: '1200px',
+  },
   colors: {
     primaryBg: '#ffffff',
     secondaryBg: '#e0e0e0',
-    border: '#d4d4d4',
     primaryText: '#212121',
     secondaryText: '#a1a1a1',
+    whiteText: '#ffffff',
     bgWindow: '#b1c6cc',
   },
   spacing: value => `${4 * value}px`,

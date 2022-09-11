@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 
+
 export const ProfileCard = styled.div`
-  width: 400px;
+  width: ${prop => prop.theme.widths.s};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,6 +12,7 @@ export const ProfileCard = styled.div`
   background-color: ${prop => prop.theme.colors.primaryBg};
   border-radius: ${prop => prop.theme.radii.normal};
   box-shadow: 10px 10px 15px -3px rgba(59,59,59,1);
+  overflow: hidden;
 `;
 
 export const Description = styled.div`
@@ -25,6 +27,7 @@ export const Avatar = styled.img`
   height: ${prop => prop.theme.space[8]}px;
   border-radius: ${prop => prop.theme.radii.round};
   background-color: ${prop => prop.theme.colors.secondaryBg};
+  margin-bottom: ${prop => prop.theme.space[6]}px;
 `;
 
 export const Name = styled.p`
@@ -32,18 +35,21 @@ export const Name = styled.p`
   font-size: ${prop => prop.theme.fontSizes.xl};
   font-weight: ${prop => prop.theme.fontWeights.bold};
   color: ${prop => prop.theme.colors.primaryText};
+  margin-bottom: ${prop => prop.theme.space[4]}px;
 `;
 
 export const Tag = styled.p`
   text-align: center;
   font-size: ${prop => prop.theme.fontSizes.m};
   color: ${prop => prop.theme.colors.secondaryText};
+  margin-bottom: ${prop => prop.theme.space[4]}px;
 `;
 
 export const Location = styled.p`
   text-align: center;
   font-size: ${prop => prop.theme.fontSizes.l};
   color: ${prop => prop.theme.colors.secondaryText};
+  margin-bottom: ${prop => prop.theme.space[6]}px;
   `;
 
 export const Stats = styled.ul`
