@@ -9,7 +9,7 @@ export const StatisticsCard = styled.section`
   margin-bottom: ${prop => prop.theme.space[6]}px;
   background-color: ${prop => prop.theme.colors.primaryBg};
   border-radius: ${prop => prop.theme.radii.normal};
-  box-shadow: 10px 10px 15px -3px rgba(59,59,59,1);
+  box-shadow: ${prop => prop.theme.shadow.boxShadow};
   overflow: hidden;
 `;
 

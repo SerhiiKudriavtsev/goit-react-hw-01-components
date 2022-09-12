@@ -2,9 +2,11 @@ import { Box } from "components/Box/Box";
 import { Profile } from "components/Profile/Profile";
 import { Statistics } from "components/Statistics/Statistics";
 import { FriendList } from "components/FriendList/FriendList";
+import { TransactionHistory } from "components/TransactionHistory/TransactionHistory";
 import user from "../../Data/user";
 import data from "../../Data/data";
 import friends from "../../Data/friends";
+import transactions from "../../Data/transactions";
 
 export const App = () => {
   return (
@@ -28,7 +30,9 @@ export const App = () => {
       
       <Statistics title="Upload stats" upload={data} />
 
-      <FriendList friends={friends} />;
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
 
     </Box>
   );

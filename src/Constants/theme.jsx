@@ -12,6 +12,9 @@ export const theme = Object.freeze({
     whiteText: '#ffffff',
     bgWindow: '#b1c6cc',
     border: '#c4c4c4',
+    tableHeader: '#00bcd5',
+    tableRowsOdd: '#ffffff',
+    tableRowsEven: '#ecf1f4',
   },
   spacing: value => `${4 * value}px`,
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
@@ -44,4 +47,8 @@ export const theme = Object.freeze({
     normal: '8px',
     round: '50%',
   },
+  shadow: {
+    textShadow: '1px 1px 1px black',
+    boxShadow: '10px 10px 15px -3px rgba(59,59,59,1)',
+  }
 });

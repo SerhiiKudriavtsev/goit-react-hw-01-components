@@ -1,6 +1,8 @@
 import styled from "@emotion/styled"
 
-export const FriendList = styled.div``;
+export const FriendListSection = styled.section`
+  margin-bottom: ${prop => prop.theme.space[6]}px;
+`;
 
 export const List = styled.ul`
   width: ${prop => prop.theme.widths.s};
@@ -12,6 +14,7 @@ export const List = styled.ul`
   margin-bottom: ${prop => prop.theme.space[4]}px;
   background-color: ${prop => prop.theme.colors.primaryBg};
   border-radius: ${prop => prop.theme.radii.normal};
+  box-shadow: ${prop => prop.theme.shadow.boxShadow};
 `; 
 export const Status = styled.span`
   display: block;
