@@ -11,6 +11,7 @@ export const theme = Object.freeze({
     secondaryText: '#a1a1a1',
     whiteText: '#ffffff',
     bgWindow: '#b1c6cc',
+    border: '#c4c4c4',
   },
   spacing: value => `${4 * value}px`,
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],

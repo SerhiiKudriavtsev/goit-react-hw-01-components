@@ -8,7 +8,6 @@ export const List = styled.ul`
   export const Item = styled.li`
   display: flex;
   align-items: center;
-  width: 100%;
   padding: ${prop => prop.theme.space[4]}px;
   margin-bottom: ${prop => prop.theme.space[4]}px;
   background-color: ${prop => prop.theme.colors.primaryBg};
@@ -18,11 +17,19 @@ export const Status = styled.span`
   display: block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: ${prop => prop.theme.radii.round};
   background-color: ${({ isOnline }) => {
     return (isOnline ? 'green' : 'red');
   }};
-  margin-right: 10px;
+  margin-right: ${prop => prop.theme.space[4]}px;
 `;
-export const Avatar = styled.img``;
-export const Name = styled.p``;  
+export const Avatar = styled.img`
+  width: 100px;
+  height: 100px;
+  background-color: ${p => p.theme.colors.secondaryBg};
+  border-radius: ${prop => prop.theme.radii.normal};
+  margin-right: ${prop => prop.theme.space[4]}px;
+`;
+export const Name = styled.p`
+  font-size: ${p => p.theme.fontSizes.xl};
+`;  
