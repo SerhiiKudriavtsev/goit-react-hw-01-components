@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import {
   TransSection,
   TransTable,
@@ -32,4 +32,11 @@ export const TransactionHistory = ({items}) => {
       </TransTable>
     </TransSection>
   )
+}
+
+TransactionHistory.propType = {
+  key: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
+  currency: PropTypes.string.isRequired,
 }

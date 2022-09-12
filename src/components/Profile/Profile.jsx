@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+  import PropTypes from 'prop-types';
 import { ProfileCard, Description, Avatar, Name, Tag, Location, Stats, Block, Label, Quantity } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {

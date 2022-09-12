@@ -29,10 +29,10 @@ export const TransTtbody = styled.tbody``;
 export const TransRow = styled.tr`
   text-align: center;
   color: ${p => p.theme.colors.secondaryText};
-  :nth-child(odd) {
+  :nth-of-type(odd) {
     background-color: ${p => p.theme.colors.tableRowsOdd};
   };
-  :nth-child(even) {
+  :nth-of-type(even) {
     background-color: ${prop => prop.theme.colors.tableRowsEven};
   };
   `;

@@ -1,4 +1,5 @@
-import {FriendListSection, List, Item, Status, Avatar, Name} from "./FriendList.styled";
+import PropTypes from 'prop-types';
+import { FriendListSection, List, Item, Status, Avatar, Name } from "./FriendList.styled";
 
 export const FriendList = ({ friends }) => {
   const dataItems = friends.map(({id, avatar, name, isOnline }) => (
@@ -14,4 +15,11 @@ export const FriendList = ({ friends }) => {
     </FriendListSection>
     
   )
+}
+
+FriendList.propTypes = {
+  key: PropTypes.number.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 }

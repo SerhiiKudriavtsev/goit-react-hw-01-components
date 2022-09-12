@@ -23,6 +23,8 @@ Statistics.propTypes = {
   upload: PropTypes.arrayOf(
     PropTypes.exact({
       key: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     }),
   ),
 }
