@@ -6,12 +6,12 @@ export const FriendList = ({ friends }) => {
     <FriendListSection>
       <List>
         {friends.map(({id, avatar, name, isOnline }) => (
-    <Item key={id}>
-      <Status isOnline={isOnline}/>
-      <Avatar src={avatar} alt="User avatar" width="48" />
-      <Name>{name}</Name>
-    </Item>
-  ))}
+          <Item key={id}>
+            <Status isOnline={isOnline}/>
+            <Avatar src={avatar} alt="User avatar" width="48" />
+            <Name>{name}</Name>
+          </Item>
+        ))}
       </List>
     </FriendListSection>
     
@@ -21,9 +21,9 @@ export const FriendList = ({ friends }) => {
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({
-  id: PropTypes.number.isRequired,
-  isOnline: PropTypes.bool.isRequired,
-  avatar: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     }),
   ),
